@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>User</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-/-Mast" transform="translate(-1204.000000, -24.000000)" fill="#DA262D">
+            <g id="Group-4">
+                <g transform="translate(896.000000, 24.000000)">
+                    <path d="M318.625,3.75 C318.625,5.8203125 316.945312,7.5 314.875,7.5 C312.804687,7.5 311.125,5.8203125 311.125,3.75 C311.125,1.6796875 312.804687,0 314.875,0 C316.945312,0 318.625,1.6796875 318.625,3.75 Z M321.75,12.4707031 C321.75,14.0527344 320.695312,15 319.142578,15 L310.607422,15 C309.054688,15 308,14.0527344 308,12.4707031 C308,10.2636719 308.517578,6.875 311.378906,6.875 C311.681641,6.875 312.960937,8.23242188 314.875,8.23242188 C316.789062,8.23242188 318.068359,6.875 318.371094,6.875 C321.232422,6.875 321.75,10.2636719 321.75,12.4707031 Z" id="User"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
