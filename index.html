@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Frontier</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,38 +8,42 @@
     <meta name="description">
         <link rel="stylesheet" href="assets/css/styles.css">
     
-  </head>
-  <body>
-      <header>
+</head>
+<body>
+    <header>
         <nav>
-            <div class="row">
-                <div class="columns large-4">
-                    <ul class="inline-list">
-                        <li>Residential</li>
-                        <li>Business</li>
-                        <li>Wholesale</li>
-                    </ul>
-                </div><!--/.columns-->
-                <div class="columns large-offset-4 large-4">
-                    <ul class="inline-list">
-                        <li><img alt="locator icon" src="assets/img/icons/pin.svg">Lake Geneva, WI</li>
-                        <li><img alt="locator icon" src="assets/img/icons/globe.svg">Espanol</li>
-                        <li><img alt="locator icon" src="assets/img/icons/user.svg">Sign In</li>
-                    </ul>
-                </div><!--/.columns-->
-            </div><!--/.row-->
+            <div id="not-mobile" class="not-mobile">
+                <div class="row">
+                    <div class="columns large-4">
+                        <ul class="inline-list">
+                            <li>Residential</li>
+                            <li>Business</li>
+                            <li>Wholesale</li>
+                        </ul>
+                    </div><!--/.columns-->
+                    <div class="columns large-offset-4 large-4">
+                        <ul class="inline-list">
+                            <li><img alt="locator icon" src="assets/img/icons/pin.svg">Lake Geneva, WI</li>
+                            <li><img alt="locator icon" src="assets/img/icons/globe.svg">Espanol</li>
+                            <li><img alt="locator icon" src="assets/img/icons/user.svg">Sign In</li>
+                        </ul>
+                    </div><!--/.columns-->
+                </div><!--/.row-->
+            </div><!--/.not-mobile-->
             <div class="row">
                 <div class="columns large-2">
                     <img alt="Frontier Logo" src="assets/img/Frontier.svg" />
                 </div>
                 <div class="columns large-4">
-                    <nav>
-                        <ul class="inline-list">
-                            <li>Shop</li>
-                            <li>My Account</li>
-                            <li>Support</li>
-                        </ul>
-                    </nav>
+                    <div class="not-mobile">
+                        <nav>
+                            <ul class="inline-list">
+                                <li>Shop</li>
+                                <li>My Account</li>
+                                <li>Support</li>
+                            </ul>
+                        </nav>
+                    </div><!--/.not-mobile-->    
                 </div><!--/.columns-->
                 <div class="columns large-3" >
                     <form>
@@ -55,15 +59,20 @@
                         <li><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</li>    
                     </ul>
                 </div><!--/.columns-->
-                <div class="columns large-5">
-                    <span>Call to order now!</span>
-                    <a href=""><img alt="telephone icon" src="assets/img/icons/tel.svg" />1.888.888.8888</a>
-                </div><!--/.columns-->
+                <div class="not-mobile--move-to-top">
+                    <div class="columns large-5">
+                        <span>Call to order now!</span>
+                        <a href=""><img alt="telephone icon" src="assets/img/icons/tel.svg" />1.888.888.8888</a>
+                        <div class="mobile">
+                            <img alt="hamburger navigation icon" src="assets/img/icons/navicon.svg" />
+                        </div><!--/.mobile-->
+                    </div><!--/.columns-->
+                </div><!--not-mobile-move-to-top-->
             </div><!--/.row-->
         </nav><!--/.nav-->
-      </header><!--/.header-->
+    </header><!--/.header-->
 
-      <main>
+    <main>
         <section class="section hero">
             <div class="row">
                 <div class="columns large-offset-6 large-5">
@@ -144,9 +153,9 @@
                 </div><!--/.columns-->
             </div><!--/.row-->
         </section><!--/.features-->
-      </main>
+    </main>
       
-      <footer>
+    <footer>
         <div class="row">
             <div class="columns large-4">
                 <p>Hurry! Get free installation when you bundle.</p>
@@ -156,6 +165,8 @@
                 <a href=""><img alt="phone icon" src="assets/img/icons/phone.svg" />1.888.888.888</a>
             </div>
         </div>
-      </footer>
-  </body>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/project.js"></script>
+</body>
 </html>
