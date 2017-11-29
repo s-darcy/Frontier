@@ -1,0 +1,38 @@
+.fa-phone:before,
+.fa-user:before,
+.fa-globe:before,
+.fa-map-marker:before,
+.fa-chevron-down.red:before {
+    color: $color-Alizarin-Crimson;
+}
+
+.fa-chevron-down.grey:before {
+    color: $color-Dusty-Gray;
+}
+
+.fa-check:before {
+    color: $color-Jelly-Bean;
+    width: 16px;
+    height: 13px;
+}
+
+.fa-chevron-right:before {
+    color: $color-White;
+    font-size: 16px;
+}
+
+.fa-heart:before {
+    color: $color-Saffron-Mango;
+    font-size: 80px;
+}
+
+.fa-tags{
+    color: $color-Jelly-Bean;
+    font-size: 80px;
+}
+
+.fa-thumbs-up {
+    color: $color-Scooter;
+    font-size: 80px;
+}
+

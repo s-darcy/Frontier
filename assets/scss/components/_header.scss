@@ -1,9 +1,74 @@
 header {
 
+    .top-nav {
+        margin-top: 25px;
 
-    @media( max-width: 642px ) {
-        .not-mobile {
-            display: none;
+        &__list-items {
+            font-size: 14px;
+            line-height: 14px;
         }
-    }    
+
+        &__login {
+            margin-bottom: 22px;
+        }
+
+        &__second-line {
+            margin-bottom: 26px;
+        }
+
+        &__search--large {
+            width: 270px;
+            height: 35px;
+            text-align: center;
+            background-image: url('../img/icons/mast.png');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-color: white;
+            background-position-x: 50px;
+            background-size: 19px;
+            border: 1px solid $color-Alto;
+            border-radius: 4px;
+        }
+
+        &__search--large::placeholder{
+            font-size: 16px;
+            height: 16px;
+            margin-top: 10px;
+            color: $color-Dove-Gray;
+        }
+
+        &__search--medium {
+            width: 194px;
+            height: 35px;
+            border: 1px solid $color-Alto;
+            border-radius: 4px 0px 0px 4px;
+        }
+
+        &__search--medium::placeholder{
+            font-size: 14px;
+            height: 16px;
+            padding-left: 16px;
+            color: $color-Dove-Gray;
+        }
+
+        &__search--magnifying-glass {
+            width: 35px;
+            height: 35px;
+            background-color: $color-Mercury;
+            border-radius: 0px 4px 4px 0px;
+            display: inline; 
+        }
+
+    }//top-nav
+
+    .inline-list > li > * {
+        display: inline;
+        margin-right: 9px;
+    }
+
+    .inline-list > li > i {
+        margin-left: 10px;
+    }
+    
+
 }//header

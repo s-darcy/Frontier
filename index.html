@@ -11,59 +11,74 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div id="not-mobile" class="not-mobile">
+        <nav class="top-bar top-nav" data-topbar role="navigation">
+            <div class="show-for-small-only">
                 <div class="row">
-                    <div class="columns large-4">
-                        <ul class="inline-list">
+                    <div class="columns medium-5">
+                        <span>Call to order now!</span>
+                        <a href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
+                        <div>
+                            <img alt="hamburger navigation icon" src="assets/img/icons/navicon.svg" />
+                        </div>
+                    </div><!--/.columns-->
+                </div><!--/.row-->
+            </div><!--/.show-for-small-only-->
+            <div class="top-nav__login  show-for-medium-up">
+                <div class="row">
+                    <div class="columns medium-4">
+                        <ul class="inline-list top-nav__list-items">
                             <li>Residential</li>
                             <li>Business</li>
                             <li>Wholesale</li>
                         </ul>
                     </div><!--/.columns-->
-                    <div class="columns large-offset-4 large-4">
-                        <ul class="inline-list">
-                            <li><img alt="locator icon" src="assets/img/icons/pin.svg">Lake Geneva, WI</li>
-                            <li><img alt="locator icon" src="assets/img/icons/globe.svg">Espanol</li>
-                            <li><img alt="locator icon" src="assets/img/icons/user.svg">Sign In</li>
+                    <div class="columns medium-offset-3 medium-5">
+                        <ul class="inline-list top-nav__list-items">
+                            <li><i class="fa fa-map-marker grey" aria-hidden="true"></i>Lake Geneva, WI<i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-globe" aria-hidden="true"></i>Espanol</li>
+                            <li><i class="fa fa-user grey" aria-hidden="true"></i>Sign In<i class="fa fa-chevron-down" aria-hidden="true"></i></li>
                         </ul>
                     </div><!--/.columns-->
                 </div><!--/.row-->
-            </div><!--/.not-mobile-->
+            </div><!--/.top-nav__login-->
+            <div class="top-nav__second-line">
+                <div class="row">
+                    <div class="columns medium-2">
+                        <img alt="Frontier Logo" src="assets/img/Frontier.svg" />
+                    </div><!--/.row-->
+                    <div class="columns medium-4">
+                        <div class="show-for-medium-up">
+                            <nav>
+                                <ul class="inline-list">
+                                    <li>Shop<i class="fa fa-chevron-down red" aria-hidden="true"></i></li>
+                                    <li>My Account<i class="fa fa-chevron-down red" aria-hidden="true"></i></li>
+                                    <li>Support<i class="fa fa-chevron-down red" aria-hidden="true"></i></li>
+                                </ul>
+                            </nav>
+                        </div><!--/.nshow-for-medium-up-->    
+                    </div><!--/.columns-->
+                    <div class="columns medium-3" >
+                        <form>
+                            <input class="top-nav__search--large  hidden-for-medium-only hidden-for-small-only" type="search" placeholder="Search Frontier..."/>
+                            <input class="top-nav__search--medium  hidden-for-small-only hidden-for-large-up" type="search" placeholder="Search Frontier..."/>
+                            <i class="top-nav__search--magnifying-glass  fa fa-search hidden-for-large-up" aria-hidden="true"></i>
+                        </form>
+                    </div> <!--/.columns-->  
+                </div><!--/.row-->
+            </div><!--/.top-nav__search-->    
             <div class="row">
-                <div class="columns large-2">
-                    <img alt="Frontier Logo" src="assets/img/Frontier.svg" />
-                </div>
-                <div class="columns large-4">
-                    <div class="not-mobile">
-                        <nav>
-                            <ul class="inline-list">
-                                <li>Shop</li>
-                                <li>My Account</li>
-                                <li>Support</li>
-                            </ul>
-                        </nav>
-                    </div><!--/.not-mobile-->    
-                </div><!--/.columns-->
-                <div class="columns large-3" >
-                    <form>
-                        <input placeholder="Search Frontier"/>
-                    </form>
-                </div> <!--/.columns-->  
-            </div><!--/.row-->
-            <div class="row">
-                <div class="columns large-6">
+                <div class="columns medium-6">
                     <ul class="inline-list">
                         <li><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet Plans</li>
                         <li><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV Plans</li>
                         <li><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</li>    
                     </ul>
                 </div><!--/.columns-->
-                <div class="not-mobile--move-to-top">
-                    <div class="columns large-5">
+                <div class="show-for-medium-up">
+                    <div class="columns medium-offset-1 medium-5">
                         <span>Call to order now!</span>
-                        <a href=""><img alt="telephone icon" src="assets/img/icons/tel.svg" />1.888.888.8888</a>
-                        <div class="mobile">
+                        <a href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
+                        <div class="hidden-for-medium-up">
                             <img alt="hamburger navigation icon" src="assets/img/icons/navicon.svg" />
                         </div><!--/.mobile-->
                     </div><!--/.columns-->
@@ -75,79 +90,86 @@
     <main>
         <section class="section hero">
             <div class="row">
-                <div class="columns large-offset-6 large-5">
+                <div class="columns medium-offset-6 medium-5">
                     <h2>Three great services. One big deal.</h2>
                     <p>Save big when bundle Frontier Internet, TV and Phone Service.</p>
-                    <button type="button">Order Now ></button>
-                    <p>Showing pricing for Lake Geneva, WI.<a href="">Change Location ></a></p>
+                    <button type="button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                    <p>Showing pricing for Lake Geneva, WI.<a href="">Change Location <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
                 </div><!--/.columns-->
             </div><!--/.row-->
         </section><!--/.hero-->
 
         <section class="section plan">
             <div class="row">
-                <div class="columns large-4 text-center">
+                <div class="columns medium-4 text-center">
                     <img alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
+                    <p>Insert Plan Name Here</p>
                     <p>$<span>XX</span>XX / mo.</p>
-                    <button>Order Now ></button>
+                    <button>Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
                     <ul>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>                    
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
                     </ul>
                     <p>Included offer details here</p>
-                    <img alt="blank image" src="assets/img/icons/image-placeholder.svg"/> 
+                    <i class="fa fa-picture-o" aria-hidden="true"></i> 
                 </div><!--/.columns-->   
-                <div class="columns large-4 text-center">
+                <div class="columns medium-4 text-center">
                     <img alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
+                    <p>Insert Plan Name Here</p>
                     <p>$<span>XX</span>XX / mo.</p>
-                    <button>Order Now ></button>
+                    <button>Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
                     <ul>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>                    
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
                     </ul>
                     <p>Included offer details here</p>
-                    <img alt="blank image" src="assets/img/icons/image-placeholder.svg"/>      
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>      
                 </div><!--/.columns-->
-                <div class="columns large-4 text-center">
+                <div class="columns medium-4 text-center">
                     <img alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
+                    <p>Insert Plan Name Here</p>
                     <p>$<span>XX</span>XX / mo.</p>
-                    <button>Order Now ></button>
+                    <button>Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
                     <ul>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>                    
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
-                        <li><img alt="checkmark icon" src="assets/img/icons/check.svg"> Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
                     </ul>
                     <p>Included offer details here</p>
-                    <img alt="blank image" src="assets/img/icons/image-placeholder.svg"/>  
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
                 </div><!--/.columns-->
             </div><!--/.row-->
         </section><!--/.plan-->
 
         <section class="section features">
             <div class="row">
-                <div class="columns large-4 large-offset-4">
+                <div class="columns medium-4 medium-offset-4">
                     <h2>Why bundle with Frontier?</h2>
                     <p>Get the home services you need at a price you’ll love.</p>
                 </div><!--/.columns-->
             </div><!--/.row-->
             <div class="row">
-                <div class="columns large-4 text-center">
-                    <img alt="heart icon" src="assets/img/icons/heart.svg" />
+                <div class="columns medium-4 text-center">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
                     <h3>Services that play nice together</h3>
                     <p>See in-screen caller ID. Program your DVR from your mobile device. Stream movies from your favorite online services to your tablet. All this technological integration makes you captain of the ship.</p>
                 </div><!--/.columns-->
-                <div class="columns large-4 text-center">
-                    <img alt="like thumb icon" src="assets/img/icons/thumb.svg" />
+                <div class="columns medium-4 text-center">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                     <h3>One provider. Three services.</h3>
                     <p>Why settle for cable for phone and TV? Bundle with Frontier Internet to enjoy free installation. Plus you get the affordability and reliability of having Frontier for your home services.</p>
                 </div><!--/.columns-->
-                <div class="columns large-4 text-center">
-                    <img alt="price tags icon" src="assets/img/icons/deals.svg" />
+                <div class="columns medium-4 text-center">
+                    <i class="fa fa-tags" aria-hidden="true"></i>
                     <h3>All-included deals</h3>
                     <p>To connect to your service, you need certain equipment like a Wi-Fi Router for your Internet. That’s why we include it at no extra charge on select bundles with Frontier.</p>
                 </div><!--/.columns-->
@@ -157,14 +179,15 @@
       
     <footer>
         <div class="row">
-            <div class="columns large-4">
-                <p>Hurry! Get free installation when you bundle.</p>
-            </div>
-            <div class="columns large-offset-3 large-5">
-                <p>Call now to order!</p>
-                <a href=""><img alt="phone icon" src="assets/img/icons/phone.svg" />1.888.888.888</a>
-            </div>
-        </div>
+            <div class="columns text-center">
+                <p>Hurry! Get free installation when you bundle. <span class="">Call now to order!</span></p>
+            </div><!--/.columns-->
+        </div><!--/.row-->
+        <div class="row">
+            <div class="columns medium-offset-4">
+                <a href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.888</a>   
+            </div><!--/.columns-->
+        </div><!--/.row-->
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/project.js"></script>
