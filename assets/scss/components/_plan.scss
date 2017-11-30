@@ -15,9 +15,31 @@
         margin-bottom: 10px;
     } 
 
-    &__card--price {
-        margin-bottom: 10px;
-    } 
+    &__card--price-dollars {
+        font-size: 90px;
+        display: inline-block;
+        font-weight: 600;
+        color: $color-Abbey;
+        line-height: 90px;
+        padding-top: 0px;
+        margin-top: -10px;
+    }
+    
+    &__card--price-dollar-sign,
+    &__card--price-monthly {
+        font-size: 20px;
+        display: inline-block;
+        font-weight: 600;
+        color: $color-Abbey; 
+    }
+
+    &__card--price-monthly {
+        margin-left: 10px;
+    }
+
+    &__card--price-dollar-sign {
+        margin-right: -7px;
+    }
 
     &__card--button {
         margin-bottom: 26px;
