@@ -1,19 +1,58 @@
 header {
 
+    margin-bottom: 40px;
+
+    .inline-list > li > * {
+        display: inline;
+        margin-right: 9px;
+    }
+
+    .inline-list > li > i {
+        margin-left: 10px;
+    }
+
     .top-nav {
-        margin-top: 25px;
 
         &__list-items {
-            font-size: 14px;
-            line-height: 14px;
+            float: right;
         }
 
         &__login {
             margin-bottom: 22px;
+            font-size: 14px;
+            line-height: 14px;
         }
 
-        &__second-line {
-            margin-bottom: 26px;
+        &__mobile-only > .row > .columns {
+            display: flex;
+            justify-content: space-around;
+            float: right;
+        }
+
+        &__mobile-only {
+            border-bottom: 1px solid $color-Alto-2;
+            height: 50px;
+            padding-top: 10px;
+        }
+
+        &__mobile-only--logo {
+            width: 65px;
+            height: 20px;
+            margin-bottom: 28px;
+        }
+
+        &__mobile-only--second-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__mobile-only--second-row > li > img {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__phone-number {
+            color: $color-Abbey;
         }
 
         &__search--large {
@@ -30,7 +69,7 @@ header {
             border-radius: 4px;
         }
 
-        &__search--large::placeholder{
+        &__search--large::placeholder {
             font-size: 16px;
             height: 16px;
             margin-top: 10px;
@@ -38,13 +77,14 @@ header {
         }
 
         &__search--medium {
-            width: 194px;
-            height: 35px;
+            width: 190px;
+            height: 31px;
             border: 1px solid $color-Alto;
             border-radius: 4px 0px 0px 4px;
+            margin-left: -40px;
         }
 
-        &__search--medium::placeholder{
+        &__search--medium::placeholder {
             font-size: 14px;
             height: 16px;
             padding-left: 16px;
@@ -56,19 +96,30 @@ header {
             height: 35px;
             background-color: $color-Mercury;
             border-radius: 0px 4px 4px 0px;
-            display: inline; 
+            padding: 11px;
+            font-size: 13px;
+            display: inline-block; 
+            color: $color-Dusty-Gray;
+            margin-left: -4px;
+            margin-top: 3px;
+        }
+
+        &__second-line {
+            margin-bottom: 26px;
+        }
+
+        &__third-line {
+            margin-bottom: 26px;
+            border: 1px solid $color-Alto-2;
+            line-height: 50px;
+            padding-top: 25px;
+        }
+
+        &__third-line--medium > li > img {
+            width: 30px;
+            height: 30px;
         }
 
     }//top-nav
-
-    .inline-list > li > * {
-        display: inline;
-        margin-right: 9px;
-    }
-
-    .inline-list > li > i {
-        margin-left: 10px;
-    }
     
-
 }//header

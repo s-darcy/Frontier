@@ -12,27 +12,34 @@
 <body>
     <header>
         <nav class="top-bar top-nav" data-topbar role="navigation">
-            <div class="show-for-small-only">
+            <div class="top-nav__mobile-only  show-for-small-only">
                 <div class="row">
-                    <div class="columns medium-5">
-                        <span>Call to order now!</span>
-                        <a href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
-                        <div>
-                            <img alt="hamburger navigation icon" src="assets/img/icons/navicon.svg" />
-                        </div>
+                    <div class="columns">
+                        <img class="top-nav__mobile-only--logo" alt="Frontier Logo" src="assets/img/Frontier.svg" />
+                        <a class="top-nav__phone-number" href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
                     </div><!--/.columns-->
                 </div><!--/.row-->
-            </div><!--/.show-for-small-only-->
+                <div class="row">
+                    <div class="columns">
+                        <ul class="inline-list  top-nav__mobile-only--second-row">
+                            <li><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet</li>
+                            <li><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV</li>
+                            <li><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</li>    
+                        </ul><!--/.top-nav__mobile-only-second-row-->
+                    </div><!--/.columns-->
+                </div><!--/.row-->      
+            </div><!--/.mobile-only-->
             <div class="top-nav__login  show-for-medium-up">
                 <div class="row">
-                    <div class="columns medium-4">
-                        <ul class="inline-list top-nav__list-items">
+                    <div class="columns medium-5">
+                        <ul class="inline-list">
                             <li>Residential</li>
                             <li>Business</li>
                             <li>Wholesale</li>
                         </ul>
                     </div><!--/.columns-->
-                    <div class="columns medium-offset-3 medium-5">
+                    <div class="columns medium-7">
                         <ul class="inline-list top-nav__list-items">
                             <li><i class="fa fa-map-marker grey" aria-hidden="true"></i>Lake Geneva, WI<i class="fa fa-chevron-down" aria-hidden="true"></i></li>
                             <li><i class="fa fa-globe" aria-hidden="true"></i>Espanol</li>
@@ -41,12 +48,12 @@
                     </div><!--/.columns-->
                 </div><!--/.row-->
             </div><!--/.top-nav__login-->
-            <div class="top-nav__second-line">
+            <div class="top-nav__second-line  hidden-for-small-only">
                 <div class="row">
                     <div class="columns medium-2">
-                        <img alt="Frontier Logo" src="assets/img/Frontier.svg" />
+                        <img class="hidden-for-small-only" alt="Frontier Logo" src="assets/img/Frontier.svg" />
                     </div><!--/.row-->
-                    <div class="columns medium-4">
+                    <div class="columns medium-6">
                         <div class="show-for-medium-up">
                             <nav>
                                 <ul class="inline-list">
@@ -57,35 +64,37 @@
                             </nav>
                         </div><!--/.nshow-for-medium-up-->    
                     </div><!--/.columns-->
-                    <div class="columns medium-3" >
+                    <div class="columns medium-4" >
                         <form>
                             <input class="top-nav__search--large  hidden-for-medium-only hidden-for-small-only" type="search" placeholder="Search Frontier..."/>
                             <input class="top-nav__search--medium  hidden-for-small-only hidden-for-large-up" type="search" placeholder="Search Frontier..."/>
-                            <i class="top-nav__search--magnifying-glass  fa fa-search hidden-for-large-up" aria-hidden="true"></i>
+                            <i class="top-nav__search--magnifying-glass  fa fa-search hidden-for-large-up hidden-for-small-only" aria-hidden="true"></i>
                         </form>
                     </div> <!--/.columns-->  
                 </div><!--/.row-->
-            </div><!--/.top-nav__search-->    
-            <div class="row">
-                <div class="columns medium-6">
-                    <ul class="inline-list">
-                        <li><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet Plans</li>
-                        <li><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV Plans</li>
-                        <li><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</li>    
-                    </ul>
-                </div><!--/.columns-->
-                <div class="show-for-medium-up">
-                    <div class="columns medium-offset-1 medium-5">
-                        <span>Call to order now!</span>
-                        <a href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
-                        <div class="hidden-for-medium-up">
-                            <img alt="hamburger navigation icon" src="assets/img/icons/navicon.svg" />
-                        </div><!--/.mobile-->
+            </div><!--/.top-nav__search--> 
+            <div class="top-nav__third-line  hidden-for-small-only">
+                <div class="row">
+                    <div class="columns medium-7">
+                        <ul class="inline-list top-nav__third-line--medium">
+                            <li><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet Plans</li>
+                            <li><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV Plans</li>
+                            <li><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</li>    
+                        </ul>
                     </div><!--/.columns-->
-                </div><!--not-mobile-move-to-top-->
-            </div><!--/.row-->
+                    <div class="show-for-medium-up">
+                        <div class="columns medium-5">
+                            <span>Call to order now!</span>
+                            <a class="top-nav__phone-number" href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
+                            <div class="hidden-for-medium-up">
+                                <img alt="hamburger navigation icon" src="assets/img/icons/navicon.svg" />
+                            </div><!--/.mobile-->
+                        </div><!--/.columns-->
+                    </div><!--not-mobile-move-to-top-->
+                </div><!--/.row-->
+            </div><!--top-nav__third-line-->   
         </nav><!--/.nav-->
-    </header><!--/.header-->
+    </header>
 
     <main>
         <section class="section hero">

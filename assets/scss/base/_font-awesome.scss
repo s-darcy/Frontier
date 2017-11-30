@@ -2,7 +2,8 @@
 .fa-user:before,
 .fa-globe:before,
 .fa-map-marker:before,
-.fa-chevron-down.red:before {
+.fa-chevron-down.red:before,
+.fa-bars:before {
     color: $color-Alizarin-Crimson;
 }
 
@@ -34,5 +35,10 @@
 .fa-thumbs-up {
     color: $color-Scooter;
     font-size: 80px;
+}
+
+.fa-bars {
+    width: 25px;
+    height: 15px;
 }
 
