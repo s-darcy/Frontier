@@ -75,7 +75,7 @@
             </div><!--/.top-nav__search--> 
             <div class="top-nav__third-line  hidden-for-small-only">
                 <div class="row">
-                    <div class="columns medium-7">
+                    <div class="columns medium-8">
                         <ul class="inline-list top-nav__third-line--medium">
                             <li><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet Plans</li>
                             <li><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV Plans</li>
@@ -83,8 +83,8 @@
                         </ul>
                     </div><!--/.columns-->
                     <div class="show-for-medium-up">
-                        <div class="columns medium-5">
-                            <span>Call to order now!</span>
+                        <div class="columns medium-4">
+                            <span class="hidden-for-medium-only">Call to order now!</span>
                             <a class="top-nav__phone-number" href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
                             <div class="hidden-for-medium-up">
                                 <img alt="hamburger navigation icon" src="assets/img/icons/navicon.svg" />
@@ -98,63 +98,83 @@
 
     <main>
         <section class="section hero">
-            <div class="row">
-                <div class="columns medium-offset-6 medium-5">
-                    <h2>Three great services. One big deal.</h2>
-                    <p>Save big when bundle Frontier Internet, TV and Phone Service.</p>
-                    <button type="button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </button>
-                    <p>Showing pricing for Lake Geneva, WI.<a href="">Change Location <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
-                </div><!--/.columns-->
-            </div><!--/.row-->
+            <div class="hidden-for-medium-up text-center">
+                <img class="hidden-for-medium-up" alt="family surfing the internet together" src="assets/img/hero-background-image.jpg" />
+                <div class="row">
+                    <div class="hero__call-to-action--section  columns medium-offset-6 medium-5">
+                        <h2 class="hero__call-to-action--heading">Three great services. One big deal.</h2>
+                        <p class="hero__call-to-action--text">Save big when bundle Frontier<sup>&#174;</sup> Internet, TV and Phone Service.</p>
+                        <button class="hero__call-to-action--button" type="button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                        <p class="hero__call-to-action--location-search">Showing pricing for Lake Geneva, WI.<a href="">Change Location <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>  
+                    </div><!--/.columns-->
+                </div><!--/.row-->
+            </div>   
+            <div class="hero__background-image  hidden-for-small-only">
+                <div class="row">
+                    <div class="hero__call-to-action--section  columns medium-offset-6 medium-5">
+                        <h2 class="hero__call-to-action--heading">Three great services. One big deal.</h2>
+                        <p class="hero__call-to-action--text">Save big when bundle Frontier<sup>&#174;</sup> Internet, TV and Phone Service.</p>
+                        <button class="hero__call-to-action--button" type="button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                        <p class="hero__call-to-action--location-search">Showing pricing for Lake Geneva, WI. <a href="">Change Location <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>  
+                    </div><!--/.columns-->
+                </div><!--/.row-->
+            </div><!--/.hero__background-image-->
         </section><!--/.hero-->
 
         <section class="section plan">
             <div class="row">
                 <div class="columns medium-4 text-center">
-                    <img alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
-                    <p>Insert Plan Name Here</p>
-                    <p>$<span>XX</span>XX / mo.</p>
-                    <button>Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </button>
-                    <ul>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                    </ul>
-                    <p>Included offer details here</p>
-                    <i class="fa fa-picture-o" aria-hidden="true"></i> 
+                    <div class="plan__card">
+                        <img class="plan__card--image" alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
+                        <p class="plan__card--plan-name">Insert Plan Name Here</p>
+                        <p class="plan__card--price">$<span>XX</span>XX / mo.</p>
+                        <button class="plan__card--button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                        <ul class="plan__card--features">
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        </ul>
+                        <p class="plan__card--details">Included offer details here</p>
+                        <i class="fa fa-picture-o plan__card--placeholder-image" aria-hidden="true"></i> 
+                    </div><!--/.plan__card-->
                 </div><!--/.columns-->   
                 <div class="columns medium-4 text-center">
-                    <img alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
-                    <p>Insert Plan Name Here</p>
-                    <p>$<span>XX</span>XX / mo.</p>
-                    <button>Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </button>
-                    <ul>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                    </ul>
-                    <p>Included offer details here</p>
-                    <i class="fa fa-picture-o" aria-hidden="true"></i>      
+                    <div class="plan__card">
+                        <img class="plan__card--image" alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
+                        <p class="plan__card--plan-name">Insert Plan Name Here</p>
+                        <p class="plan__card--price">$<span>XX</span>XX / mo.</p>
+                        <button class="plan__card--button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                        <ul class="plan__card--features">
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        </ul>
+                        <p class="plan__card--details">Included offer details here</p>
+                        <i class="fa fa-picture-o plan__card--placeholder-image" aria-hidden="true"></i>      
+                    </div><!--/.plan__card-->
                 </div><!--/.columns-->
                 <div class="columns medium-4 text-center">
-                    <img alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
-                    <p>Insert Plan Name Here</p>
-                    <p>$<span>XX</span>XX / mo.</p>
-                    <button>Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </button>
-                    <ul>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
-                    </ul>
-                    <p>Included offer details here</p>
-                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    <div class="plan__card">
+                        <img class="plan__card--image" alt="home phone and desktop icon" src="assets/img/icons/double-play.svg" />
+                        <p class="plan__card--plan-name">Insert Plan Name Here</p>
+                        <p class="plan__card--price">$<span>XX</span>XX / mo.</p>
+                        <button class="plan__card--button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                        <ul class="plan__card--features">
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
+                        </ul>
+                        <p class="plan__card--details">Included offer details here</p>
+                        <i class="fa fa-picture-o plan__card--placeholder-image" aria-hidden="true"></i>
+                    </div><!--/.plan__card-->
                 </div><!--/.columns-->
             </div><!--/.row-->
         </section><!--/.plan-->

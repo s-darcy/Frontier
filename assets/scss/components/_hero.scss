@@ -1,0 +1,92 @@
+.hero {
+    margin-bottom: 40px;
+
+    &__background-image {
+        background-image: url( '../img/hero-background-image.jpg' );
+        background-repeat: no-repeat;
+        // background-size: 81%;
+        background-position: center;
+    }
+
+    &__call-to-action--section {
+        margin-top: 97px;
+        background-color: rgba(255, 255, 255, .9);
+        margin-bottom: 96px;
+        padding-top: 40px;
+    }
+
+    &__call-to-action--heading {
+        color: $color-Abbey;
+        margin-bottom: 21px;
+
+    }
+
+    &__call-to-action--text {
+        margin-bottom: 19px;
+    }
+
+    &__call-to-action--button {
+        width: 290px;
+        margin-bottom: 20px;
+        width: 290px;
+    }
+
+    &__call-to-action--location-search{
+        margin-bottom: 40px;
+    }
+
+    &__call-to-action--location-search > a,
+    .fa-chevron-:before {
+        color: $color-Jelly-Bean;
+    }
+
+    @media screen and (min-width: 658px) and (max-width: 1025px) {
+        margin-top: -40px;
+
+        &__call-to-action--section {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 0px;
+        }
+
+        &__call-to-action--heading {
+            margin-top: 123px;
+            color: $color-Abbey;
+            margin-bottom: 21px;
+        }
+
+        &__call-to-action--button {
+            max-width: 290px;
+        }
+
+        &__call-to-action--location-search > a,
+        .fa-chevron-:before {
+            display: block;
+        }
+
+    }//tablet media query
+
+    @media screen and (max-width: 657px){
+        
+        &__call-to-action--section {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        &__call-to-action--text {
+            margin-bottom: 40px;
+        }
+
+        &__call-to-action--button {
+            max-width: 290px;
+            margin-bottom: 40px;
+        }
+
+        &__call-to-action--location-search > a,
+        .fa-chevron-:before {
+            display: block;
+        }
+
+    }//mobile media query
+
+}//hero

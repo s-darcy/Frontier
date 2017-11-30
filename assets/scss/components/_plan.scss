@@ -1,0 +1,42 @@
+.plan {
+    
+    &__card {
+        border: 1px solid $color-Alto;
+        border-radius: 4px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__card--image {
+        margin-bottom: 20px;
+    } 
+
+    &__card--plan-name {
+        margin-bottom: 10px;
+    } 
+
+    &__card--price {
+        margin-bottom: 10px;
+    } 
+
+    &__card--button {
+        margin-bottom: 26px;
+        width: 270px;
+    } 
+
+    &__card--features {
+        margin-bottom: 26px;
+    } 
+    
+    &__card--details {
+        margin-top: 30px;
+        margin-bottom: 12px;
+    } 
+
+    &__card--placeholder-image {
+        margin-bottom: 30px;
+        font-size: 47px;
+        color: $color-Mercury-2;
+    } 
+
+}
