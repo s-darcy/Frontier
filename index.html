@@ -12,38 +12,42 @@
 <body>
     <header>
         <nav class="top-bar top-nav" data-topbar role="navigation">
+<!--MOBILE ONLY-->
             <div class="top-nav__mobile-only  show-for-small-only">
                 <div class="row">
                     <div class="columns">
                         <img class="top-nav__mobile-only--logo" alt="Frontier Logo" src="assets/img/Frontier.svg" />
-                        <a class="top-nav__phone-number" href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
+                        <a class="top-nav__phone-number" href="#"><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </div><!--/.columns-->
                 </div><!--/.row-->
+            </div><!--top-nav__mobile-only-->      
+            <div class="top-nav__mobile-only--second-layer  show-for-small-only">
                 <div class="row">
                     <div class="columns">
                         <ul class="inline-list  top-nav__mobile-only--second-row">
-                            <li><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet</li>
-                            <li><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV</li>
-                            <li><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</li>    
+                            <li><a href="#"><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet</a></li>
+                            <li><a href="#"><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV</a></li>
+                            <li><a href="#"><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</a></li>    
                         </ul><!--/.top-nav__mobile-only-second-row-->
                     </div><!--/.columns-->
-                </div><!--/.row-->      
-            </div><!--/.mobile-only-->
+                </div><!--/.row--> 
+            </div><!--top-nav__mobile-only-second-layer-->      
+ <!--MOBILE ONLY-->           
             <div class="top-nav__login  show-for-medium-up">
                 <div class="row">
                     <div class="columns medium-5">
                         <ul class="inline-list">
-                            <li>Residential</li>
-                            <li>Business</li>
-                            <li>Wholesale</li>
+                            <li><a href="#">Residential</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Wholesale</a></li>
                         </ul>
                     </div><!--/.columns-->
                     <div class="columns medium-7">
                         <ul class="inline-list top-nav__list-items">
-                            <li><i class="fa fa-map-marker grey" aria-hidden="true"></i>Lake Geneva, WI<i class="fa fa-chevron-down" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-globe" aria-hidden="true"></i>Espanol</li>
-                            <li><i class="fa fa-user grey" aria-hidden="true"></i>Sign In<i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                            <li><a href="#"><i class="fa fa-map-marker grey" aria-hidden="true"></i>Lake Geneva, WI<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i>Espanol</a></li>
+                            <li><a href="#"><i class="fa fa-user grey" aria-hidden="true"></i>Sign In<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
                         </ul>
                     </div><!--/.columns-->
                 </div><!--/.row-->
@@ -57,9 +61,9 @@
                         <div class="show-for-medium-up">
                             <nav>
                                 <ul class="inline-list">
-                                    <li>Shop<i class="fa fa-chevron-down red" aria-hidden="true"></i></li>
-                                    <li>My Account<i class="fa fa-chevron-down red" aria-hidden="true"></i></li>
-                                    <li>Support<i class="fa fa-chevron-down red" aria-hidden="true"></i></li>
+                                    <li><a href="#">Shop<i class="fa fa-chevron-down red" aria-hidden="true"></i></a></li>
+                                    <li><a href="#">My Account<i class="fa fa-chevron-down red" aria-hidden="true"></i></a></li>
+                                    <li><a href="#">Support<i class="fa fa-chevron-down red" aria-hidden="true"></i></a></li>
                                 </ul>
                             </nav>
                         </div><!--/.nshow-for-medium-up-->    
@@ -77,15 +81,15 @@
                 <div class="row">
                     <div class="columns medium-8">
                         <ul class="inline-list top-nav__third-line--medium">
-                            <li><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet Plans</li>
-                            <li><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV Plans</li>
-                            <li><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</li>    
+                            <li><a href="#"><img alt="computer icon" src="assets/img/icons/internet.svg"/>Internet Plans</a></li>
+                            <li><a href="#"><img alt="TV icon" src="assets/img/icons/tv.svg"/>TV Plans</a></li>
+                            <li><a href="#"><img alt="Price tag icon" src="assets/img/icons/bundles.svg"/>Bundles</a></li>    
                         </ul>
                     </div><!--/.columns-->
                     <div class="show-for-medium-up">
-                        <div class="columns medium-4">
-                            <span class="hidden-for-medium-only">Call to order now!</span>
-                            <a class="top-nav__phone-number" href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
+                        <div class="top-nav__third-line--call-now  columns medium-4">
+                            <span class="hidden-for-medium-only">Call to order now! </span>
+                            <a class="top-nav__phone-number" href="#"><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.8888</a>
                             <div class="hidden-for-medium-up">
                                 <img alt="hamburger navigation icon" src="assets/img/icons/navicon.svg" />
                             </div><!--/.mobile-->
@@ -192,12 +196,12 @@
                             <div class="columns  large-4 medium-4 small-4">
                                 <p class="plan__card--price-dollars">XX</p>
                             </div><!--/.columns-->
-                            <div class="plan__card--price-monthly  columns large-3 medium-offset-2 medium-3 small-2 end">
+                            <div class="plan__card--price-monthly  columns large-3 medium-6 small-2 end">
                                 <p class="plan__card--price">XX</p>
                                 <p class="plan__card--price">/ mo.</p>     
                             </div><!--/.plan__card-price-monthly-->
                         </div><!--/.row-->
-                        <button class="plan__card--button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    <button class="plan__card--button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         </button>
                         <ul class="plan__card--features">
                             <li><i class="fa fa-check" aria-hidden="true"></i>Plan feature goes here</li>
@@ -214,26 +218,27 @@
 
         <section class="section features">
             <div class="row">
-                <div class="columns medium-4 medium-offset-4">
-                    <h2>Why bundle with Frontier?</h2>
-                    <p>Get the home services you need at a price you’ll love.</p>
+                <div class="columns large-4 large-offset-4 medium-8 medium-offset-2 text-center">
+                    <h2 class="features__heading">Why bundle with Frontier?</h2>
+                    <p class="features__text">Get the home services you need at a price you’ll love.</p>
+                    <hr>
                 </div><!--/.columns-->
             </div><!--/.row-->
             <div class="row">
                 <div class="columns medium-4 text-center">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <h3>Services that play nice together</h3>
-                    <p>See in-screen caller ID. Program your DVR from your mobile device. Stream movies from your favorite online services to your tablet. All this technological integration makes you captain of the ship.</p>
+                    <i class="features__symbol  fa fa-heart" aria-hidden="true"></i>
+                    <h3 class="features__sub-heading">Services that play nice together</h3>
+                    <p class="features__description">See in-screen caller ID. Program your DVR from your mobile device. Stream movies from your favorite online services to your tablet. All this technological integration makes you captain of the ship.</p>
                 </div><!--/.columns-->
                 <div class="columns medium-4 text-center">
-                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                    <h3>One provider. Three services.</h3>
-                    <p>Why settle for cable for phone and TV? Bundle with Frontier Internet to enjoy free installation. Plus you get the affordability and reliability of having Frontier for your home services.</p>
+                    <i class="features__symbol  fa fa-thumbs-up" aria-hidden="true"></i>
+                    <h3 class="features__sub-heading">One provider. Three services.</h3>
+                    <p class="features__description">Why settle for cable for phone and TV? Bundle with Frontier Internet to enjoy free installation. Plus you get the affordability and reliability of having Frontier for your home services.</p>
                 </div><!--/.columns-->
                 <div class="columns medium-4 text-center">
-                    <i class="fa fa-tags" aria-hidden="true"></i>
-                    <h3>All-included deals</h3>
-                    <p>To connect to your service, you need certain equipment like a Wi-Fi Router for your Internet. That’s why we include it at no extra charge on select bundles with Frontier.</p>
+                    <i class="features__symbol  fa fa-tags" aria-hidden="true"></i>
+                    <h3 class="features__sub-heading">All-included deals</h3>
+                    <p class="features__description">To connect to your service, you need certain equipment like a Wi-Fi Router for your Internet. That’s why we include it at no extra charge on select bundles with Frontier.</p>
                 </div><!--/.columns-->
             </div><!--/.row-->
         </section><!--/.features-->
@@ -242,13 +247,23 @@
     <footer>
         <div class="row">
             <div class="columns text-center">
-                <p>Hurry! Get free installation when you bundle. <span class="">Call now to order!</span></p>
+                <p class="footer__call-to-action">Hurry! Get free installation when you bundle.</p>
+                <p class="footer__call-to-action--call">Call now to order!
+                    <a class="hidden-for-small-only hidden-for-medium-only" href="#"><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.888</a>                  
+                </p>    
             </div><!--/.columns-->
         </div><!--/.row-->
-        <div class="row">
-            <div class="columns medium-offset-4">
-                <a href=""><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.888</a>   
+        <div class="row hidden-for-large-up">
+            <div class="footer__medium  columns hidden-for-large-up hidden-for-small-only medium-offset-4">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.888</a>   
             </div><!--/.columns-->
+            <div class="hidden-for-large-only hidden-for-medium-only text-center">
+                <button class="footer__call-button">
+                    <a href="#">
+                        <i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.888<i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </button>
+            </div>
         </div><!--/.row-->
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

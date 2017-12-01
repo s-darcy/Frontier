@@ -1,0 +1,50 @@
+.features {
+    margin-bottom: 60px;
+
+    &__heading {
+        font-size: 36px;
+        font-family: JosefinSans-Regular;
+        color: $color-Abbey;
+        line-height: 36px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+
+    hr {
+        color: $color-Alto-2;
+        width: 170px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    &__symbol {
+        margin-bottom: 20px;
+    }
+
+    &__sub-heading {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: $color-Abbey;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $color-Abbey;
+    }
+
+    @media screen and (min-width: 1026px) {
+        margin-bottom: 148px;
+        border-bottom: none;
+    }
+
+    @media screen and (min-width: 658px) and (max-width: 860px){ 
+        margin-bottom: 84px;
+    }
+
+}//features

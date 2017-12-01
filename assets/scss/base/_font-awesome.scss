@@ -5,10 +5,16 @@
 .fa-chevron-down.red:before,
 .fa-bars:before {
     color: $color-Alizarin-Crimson;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .fa-chevron-down.grey:before {
     color: $color-Dusty-Gray;
+}
+
+.fa-chevron-down:before {
+    margin-left: 5px;
 }
 
 .fa-check:before {

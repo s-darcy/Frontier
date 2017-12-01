@@ -1,5 +1,7 @@
 .plan {
     
+    margin-bottom: 60px;
+
     &__card {
         border: 1px solid $color-Alto;
         border-radius: 4px;
@@ -66,6 +68,10 @@
         margin-bottom: 30px;
         font-size: 47px;
         color: $color-Mercury-2;
+    }
+
+    @media screen and (min-width: 1026px) {
+        margin-bottom: 100px;
     }
     
     // @media screen and (min-width: 658px) and (max-width: 860px){ 

@@ -3,6 +3,11 @@
     src: url('/assets/fonts/nexa/nexa-webfont.ttf') format('ttf');
 }
 
+@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url('/assets/fonts/josefin-sans/JosefinSans-Regular.ttf') format('ttf');
+}
+
 html, body {
     font-family: 'Nexa';
     font-size: 16px; 
@@ -17,26 +22,10 @@ li {
     list-style: none;
 }
 
+a {
+    color: $color-Dove-Gray;
+}
+
 .row {
-    max-width: 1200px;
+    max-width: 1300px;
 }
-
-.trademark {
-    
-}
-
-
-// @font-face {
-//     font-family: 'JosefinSans-Regular';
-//     src: url('/assets/fonts/josefin-sans/JosefinSans-Regular.ttf') format('ttf');
-// }
-
-// @font-face {
-//     font-family: 'JosefinSans-SemiBold';
-//     src: url('/assets/fonts/josefin-sans/JosefinSans-SemiBold.ttf') format('ttf');
-// }
-
-// @font-face {
-//     font-family: 'Lora-Italic';
-//     src: url('/assets/fonts/lora/Lora-Italic.ttf') format('ttf');
-// }

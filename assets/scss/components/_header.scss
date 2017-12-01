@@ -31,7 +31,7 @@ header {
 
         &__mobile-only {
             border-bottom: 1px solid $color-Alto-2;
-            height: 50px;
+            height: 40px;
             padding-top: 10px;
         }
 
@@ -41,9 +41,13 @@ header {
             margin-bottom: 28px;
         }
 
+        &__mobile-only--second-layer {
+            height: 40px;
+        }
+
         &__mobile-only--second-row {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         &__mobile-only--second-row > li > img {
@@ -119,6 +123,15 @@ header {
             width: 30px;
             height: 30px;
             font-size: 20px;
+        }
+
+        .top-nav__third-line--call-now {
+            margin-top: -10px;
+        }
+
+        .top-nav__third-line--call-now > span,
+        .top-nav__third-line--call-now > a > i {
+            margin-right: 10px;
         }
 
     }//top-nav
