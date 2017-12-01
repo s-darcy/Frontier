@@ -77,4 +77,13 @@ footer {
 
     }//tablet media query
 
+    @media screen and (max-width: 642px) { 
+        padding: 40px 0px 0px;
+
+        .footer__call-button {
+            width: 290px;
+        }
+ 
+     }//mobile media query
+
 }//footer
