@@ -1,0 +1,87 @@
+.modal {
+    height: 390px;
+    width: 290px;
+    padding: 0px 12px;
+
+    &__heading {
+        margin-top: 80px;
+        color: $color-Abbey;
+    }
+
+    &__phone-number {
+        color: $color-White;
+    }
+
+    &__phone-number > .fa-phone:before{
+        color: $color-White;
+    }
+
+    &__or {
+        color: $color-Abbey;
+    }
+    
+    @media screen and (min-width: 658px){
+        
+        height: 449px;
+        width: 570px;
+
+        &__heading{
+            padding-top: 90px;
+            margin-bottom: 40px;
+            font-size: 36px;
+            margin-top: 0px;
+        }
+
+        &__phone-number {
+            margin-bottom: 20px;
+            line-height: 26px;
+            font-size: 26px;
+            color: $color-Abbey;
+        }
+
+        &__phone-number > .fa-phone:before{
+            color: $color-Alizarin-Crimson;
+        }
+
+        &__or {
+            margin-bottom: 20px;
+        }
+
+        &__order-online {
+            margin-bottom: 120px;
+            width: 290px;
+        }
+        
+    }//desktop and tablet media query
+
+    @media screen and (max-width: 658px){ 
+        
+        &__order-online {
+            background-color: $color-White;
+            border: 1px solid $color-Alizarin-Crimson;
+            padding: 14px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 265px;
+        }
+
+        &__order-online:hover {
+            color: $color-White;
+        }
+
+        button {
+            color: $color-Alizarin-Crimson;
+            padding: 14px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 265px;
+        }
+
+        &__order-online > .fa-shopping-cart:before,
+        &__order-online > .fa-chevron-right:before {
+            color: $color-Alizarin-Crimson;
+        }    
+
+    }//mobile media query
+
+}//modal

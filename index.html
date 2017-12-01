@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description">
-        <link rel="stylesheet" href="assets/css/styles.css">
-    
+
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
@@ -108,18 +108,18 @@
                     <div class="hero__call-to-action--section  columns medium-offset-6 medium-5">
                         <h2 class="hero__call-to-action--heading">Three great services. One big deal.</h2>
                         <p class="hero__call-to-action--text">Save big when bundle Frontier<sup>&#174;</sup> Internet, TV and Phone Service.</p>
-                        <button class="hero__call-to-action--button" type="button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        <button class="hero__call-to-action--button" type="button" data-reveal-id="call-to-action-modal-mobile">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         </button>
                         <p class="hero__call-to-action--location-search">Showing pricing for Lake Geneva, WI.<a href="">Change Location <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>  
                     </div><!--/.columns-->
                 </div><!--/.row-->
-            </div>   
+            </div><!--hidden-for-medium-up-->   
             <div class="hero__background-image  hidden-for-small-only">
                 <div class="row">
                     <div class="hero__call-to-action--section  columns medium-offset-6 medium-5">
                         <h2 class="hero__call-to-action--heading">Three great services. One big deal.</h2>
                         <p class="hero__call-to-action--text">Save big when bundle Frontier<sup>&#174;</sup> Internet, TV and Phone Service.</p>
-                        <button class="hero__call-to-action--button" type="button">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        <button class="hero__call-to-action--button" type="button" data-reveal-id="call-to-action-modal">Order Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         </button>
                         <p class="hero__call-to-action--location-search">Showing pricing for Lake Geneva, WI. <a href="">Change Location <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>  
                     </div><!--/.columns-->
@@ -266,7 +266,40 @@
             </div>
         </div><!--/.row-->
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Mobile Modal-->
+    <div id="call-to-action-modal-mobile" class="reveal-modal modal  text-center" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <div class="text-center">
+            <h2 class="modal__heading">Ready to Order?</h2>
+            <button>
+                <a class="modal__phone-number" href="#">Call <i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.888</a>
+            </button>
+            <p class="modal__or">or</p>
+            <button class="modal__order-online">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>Order Online<i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>    
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>            
+        </div> 
+    </div>
+<!-- Desktop/Tablet Modal-->
+    <div id="call-to-action-modal" class="reveal-modal modal  text-center" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <div class="text-center">
+            <h2 class="modal__heading">Ready to Order?</h2>
+            <a class="modal__phone-number" href="#">Call <i class="fa fa-phone" aria-hidden="true"></i> 1.888.888.888</a>
+            <p class="modal__or">or</p>
+            <button class="modal__order-online">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>Order Online<i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>    
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>            
+        </div> 
+    </div>
+<!-- End modals -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="node_modules/zurb-foundation-5/js/foundation/foundation.js"></script>
+    <script src="node_modules/zurb-foundation-5/js/foundation/foundation.reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/js/project.js"></script>
 </body>
 </html>

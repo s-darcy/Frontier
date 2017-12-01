@@ -1,4 +1,5 @@
 .features {
+    
     margin-bottom: 60px;
 
     &__heading {
@@ -41,10 +42,10 @@
     @media screen and (min-width: 1026px) {
         margin-bottom: 148px;
         border-bottom: none;
-    }
+    }//desktop media query
 
     @media screen and (min-width: 642px) and (max-width: 860px){ 
         margin-bottom: 84px;
-    }
+    }//tablet media query
 
 }//features
