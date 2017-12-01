@@ -21,12 +21,20 @@ header {
             margin-bottom: 22px;
             font-size: 14px;
             line-height: 14px;
+            margin-top: 10px;
+        }
+
+        &__options {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
         }
 
         &__mobile-only > .row > .columns {
             display: flex;
             justify-content: space-around;
             float: right;
+            height: 10px;
         }
 
         &__mobile-only {
@@ -42,12 +50,15 @@ header {
         }
 
         &__mobile-only--second-layer {
-            height: 40px;
+            height: 0px;
         }
 
         &__mobile-only--second-row {
             display: flex;
             justify-content: space-around;
+            height: 25px;
+            font-size: 16px;
+            margin-top: 10px;
         }
 
         &__mobile-only--second-row > li > img {
@@ -57,6 +68,7 @@ header {
 
         &__phone-number {
             color: $color-Abbey;
+            font-size: 16px;
         }
 
         &__search--large {
@@ -115,25 +127,66 @@ header {
         &__third-line {
             margin-bottom: 26px;
             border: 1px solid $color-Alto-2;
-            line-height: 50px;
+            line-height: 58px;
             padding-top: 25px;
         }
 
         &__third-line--medium > li > img {
             width: 30px;
             height: 30px;
+        }
+
+        &__third-line--medium {
             font-size: 20px;
         }
 
-        .top-nav__third-line--call-now {
-            margin-top: -10px;
+        
+        &__third-line--call-now {
+            margin-top: -15px;
         }
 
-        .top-nav__third-line--call-now > span,
-        .top-nav__third-line--call-now > a > i {
-            margin-right: 10px;
+        &__third-line--phone-line {
+            font-size: 20px;
         }
+
+        // &__third-line--call-now > span,
+        // &__third-line--call-now > a > i {
+        //     margin-right: 10px;
+        // }
 
     }//top-nav
+
+    @media screen and (min-width: 1026px) {
+        
+        .top-nav {
+
+            &__options {
+                width: 39px;
+                height: 39px;
+            }
+
+            &__phone-number {
+                font-size: 26px;
+            }
+
+        }//top-nav
+       
+    }//desktop media query
+    
+    @media screen and (min-width: 642px) and (max-width: 1025px){ 
+
+        .top-nav {
+            
+            &__options {
+                width: 30px;
+                height: 30px;
+            }
+
+            &__phone-number {
+                font-size: 20px;
+            }
+
+        }//top-nav
+    }    
     
 }//header

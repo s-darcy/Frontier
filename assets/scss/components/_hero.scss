@@ -1,6 +1,10 @@
 .hero {
     margin-bottom: 40px;
 
+    &__mobile-picture {
+        margin-top: -10px;
+    }
+
     &__background-image {
         background-image: url( '../img/hero-background-image.jpg' );
         background-repeat: no-repeat;
